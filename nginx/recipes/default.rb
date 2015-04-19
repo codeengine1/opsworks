@@ -12,6 +12,12 @@ directory node[:nginx][:log_dir] do
   action :create
 end
 
+directory "/data/nginx/cache" do
+  mode 0755
+  owner node[:nginx][:user]
+  action :create
+end
+
 %w{sites-available sites-enabled conf.d inc ssl}.each do |dir|
   directory File.join(node[:nginx][:dir], dir) do
     owner 'root'
