@@ -16,6 +16,7 @@ directory "/data/nginx/cache" do
   mode 0755
   owner node[:nginx][:user]
   action :create
+  recursive true
 end
 
 %w{sites-available sites-enabled conf.d inc ssl}.each do |dir|
