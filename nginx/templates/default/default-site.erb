@@ -52,8 +52,8 @@ server {
     access_log /var/log/nginx/ssl.access.log playframework;
     error_log /var/log/nginx/ssl.error.log;
     ssl on;
-    ssl_certificate     /opt/elasticbeanstalk/deploy/ssl/ssl.crt;
-    ssl_certificate_key /opt/elasticbeanstalk/deploy/ssl/ssl.key;
+    ssl_certificate     /etc/nginx/ssl/ssl.crt;
+    ssl_certificate_key /etc/nginx/ssl/ssl.key;
     
     include 'inc/proxy.conf';
 

@@ -1,5 +1,5 @@
 name        "nginx"
-description "Installs and configures nginx configured to proxy localhost with playframework installed"
+description "Installs and configures nginx configured to proxy an application on localhost"
 maintainer  "David Maple"
 license     "Apache 2.0"
 version     "1.0.0"
