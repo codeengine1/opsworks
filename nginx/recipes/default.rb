@@ -45,8 +45,10 @@ end
 template "#{node[:nginx][:dir]}/ssl/ssl.crt" do
     cookbook 'nginx'
     mode '0600'
+    owner "root"
+    group "root"
     source "ssl.key.erb"
-    variables :key => application[:ssl_crt]
+    variables :key => node[:nginx][:ssl_crt]
     notifies :restart, "service[nginx]"
 end
 
@@ -54,7 +56,7 @@ template "#{node[:nginx][:dir]}/ssl/ssl.key" do
     cookbook 'nginx'
     mode '0600'
     source "ssl.key.erb"
-    variables :key => application[:ssl_key]
+    variables :key => node[:nginx][:ssl_key]
     notifies :restart, "service[nginx]"
 end
 
