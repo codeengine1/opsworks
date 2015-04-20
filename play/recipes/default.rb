@@ -1,5 +1,3 @@
-package ['zip', 'unzip']
-
 directory "/opt/elasticbeanstalk/deploy" do
   owner 'root'
   group 'root'
