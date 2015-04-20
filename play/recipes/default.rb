@@ -1,4 +1,5 @@
 include_recipe "zip"
+include_recipe "java"
 
 user 'play' do
   system true
