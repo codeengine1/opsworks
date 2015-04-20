@@ -1,3 +1,6 @@
+name "metadata"
+version "0.1.0"
+
 attribute "java/install_flavor",
   :default => "oracle"
 
