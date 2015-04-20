@@ -3,6 +3,7 @@ description "Installs and configures nginx configured to proxy an application on
 maintainer  "David Maple"
 license     "Apache 2.0"
 version     "1.0.0"
+depends 'nginx', '~> 1.7'
 
 attribute "nginx/dir",
   :display_name => "Nginx Directory",
