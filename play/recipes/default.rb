@@ -1,5 +1,9 @@
 include_recipe "zip"
 
+user 'play' do
+  system true
+end
+
 directory "/opt/elasticbeanstalk/deploy" do
   owner 'root'
   group 'root'
