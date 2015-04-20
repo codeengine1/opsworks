@@ -53,6 +53,14 @@ unset DISPLAY
   not_if { ::File.exists?("/etc/profile.d/activator.sh") }
 end
 
+bash 'adds app source' do
+  cwd "/opt"
+  code <<-EOH
+      wget -O /opt/elasticbeanstalk/deploy/appsource/source_bundle https://github.com/davemaple/playframework-example-application-mode/blob/master/playtest.zip?raw=true
+    EOH
+  not_if { ::File.exists?("/opt/elasticbeanstalk/deploy/appsource/source_bundle") }
+end
+
 template "play" do
   path "/etc/init.d/play"
   source "play.erb"
