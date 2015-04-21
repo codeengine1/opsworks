@@ -2,6 +2,7 @@ source "https://supermarket.getchef.com"
 
 metadata
 
+cookbook 'monit', '~> 0.7.5'
 cookbook 'zip', '~> 1.1.0'
 cookbook 'jq',  github: "davemaple/opworks-jq"
 cookbook 'java8', github: "davemaple/opsworks-java8"
