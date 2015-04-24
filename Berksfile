@@ -168,7 +168,7 @@ cookbook 'unicorn',
 	rel: 'unicorn'
 
 cookbook 'zip', '~> 1.1.0'
-cookbook 'opsworks-ntp',  github: "davemaple/opworks-ntp"
+cookbook 'opsworks-ntp',  github: "davemaple/opsworks-ntp"
 cookbook 'jq',  github: "davemaple/opworks-jq"
 cookbook 'java8', github: "davemaple/opsworks-java8"
 cookbook 'nginx', github: "davemaple/opsworks-nginx"
