@@ -1,4 +1,5 @@
 source "https://supermarket.getchef.com"
+source "https://github.com/aws/opsworks-cookbooks.git"
 
 metadata
 
