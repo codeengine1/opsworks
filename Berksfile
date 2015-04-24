@@ -1,7 +1,17 @@
 source "https://supermarket.getchef.com"
-source "https://github.com/aws/opsworks-cookbooks.git"
 
 metadata
+
+cookbook 'opsworks_initial_setup',
+  github: 'aws/opsworks-cookbooks',
+  branch: 'release-chef-11.10',
+  rel: 'opsworks_initial_setup'
+
+ cookbook 'opsworks_agent_monit',
+  github: 'aws/opsworks-cookbooks',
+  branch: 'release-chef-11.10',
+  rel: 'opsworks_agent_monit'
+
 
 cookbook 'zip', '~> 1.1.0'
 cookbook 'jq',  github: "davemaple/opworks-jq"
