@@ -100,7 +100,7 @@ cookbook 'opsworks_initial_setup',
 cookbook 'opsworks_java',
 	github: 'aws/opsworks-cookbooks',
 	branch: 'release-chef-11.10',
-	rel: 'opsworks_initial_setup'
+	rel: 'opsworks_java'
 
 cookbook 'opsworks_nodejs',
 	github: 'aws/opsworks-cookbooks',
