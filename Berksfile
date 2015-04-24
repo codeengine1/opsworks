@@ -168,7 +168,7 @@ cookbook 'unicorn',
 	rel: 'unicorn'
 
 cookbook 'zip', '~> 1.1.0'
-cookbook 'opwsorks-cloudwatch-logs', github: "davemaple/opwsorks-cloudwatch-logs"
+cookbook 'opsworks-cloudwatch-logs', github: "davemaple/opsworks-cloudwatch-logs"
 cookbook 'opsworks-ntp',  github: "davemaple/opsworks-ntp"
 cookbook 'jq',  github: "davemaple/opworks-jq"
 cookbook 'java8', github: "davemaple/opsworks-java8"
